@@ -1,0 +1,221 @@
+* {
+    font-family: "Droid Sans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ededed;
+}
+
+.container .header {
+    width: 100%;
+    background: #111;
+}
+
+.container .main-content {
+    width:100%;
+}
+
+.container .header .bar-menu {
+    padding: 1.5em;
+    cursor: pointer;
+    color:#fff;
+    width: 4em;
+}
+
+.bar-menu:hover {
+    background: #222;
+}
+
+
+.container .header .menu {
+    display: none;
+}
+
+.container .header .menu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu ul li {
+    display: block;
+    list-style-type: none;
+    width: 100%;
+}
+
+.menu ul li a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1.5em;
+}
+
+.menu ul li a:hover {
+    background: #222;
+}
+
+.container {
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .to-do-list {
+    width:70%;
+    margin: 1em auto;
+    padding: 2em;
+    background: #fff;
+    -webkit-box-shadow: 10px 10px 48px -30px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 48px -30px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 48px -30px rgba(0,0,0,0.75);
+}
+
+body div.container-title {
+    font-size: 25px;
+    text-align: center; 
+    margin:1em;
+}
+
+body > div > div > div.form-input-add-item-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.done {
+    margin: 1em 1em 1em 0;
+}
+
+.item-done:checked {
+    outline: none;
+    border: none;
+}
+
+.to-do-list .entry-item {
+    text-align: center;
+    border: none;
+    border-radius: 1em;
+    background: #ededed;
+    margin: 0.5em 1em;
+    padding: 0.5em 1em;
+    -webkit-box-shadow: 10px 10px 48px -30px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 48px -30px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 48px -30px rgba(0,0,0,0.75);
+    transition: all 0.5s;
+}
+
+.entry-item:placeholder {
+    color:#aaa;
+}
+
+.entry-item:focus {
+    transition: all 0.5s;
+    border:none;
+    outline: 0 none;
+    transform: scale(1.05);
+}
+
+.container .list {
+    padding: 0;
+}
+
+.list-elements {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .list li {
+    width:100%;
+    display:list-item;
+    list-style-type: square;
+}
+
+li #text {
+    margin: 0.5em 1em;
+}
+
+label {
+    font-weight: bold;
+}
+
+.add-item {
+    transition: all 0.5s;
+    width: 8em;
+    padding: 0.5em 2em;
+    cursor:pointer;
+    border:none;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: rgb(63, 170, 63);
+    -webkit-box-shadow: 10px 10px 48px -30px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 48px -30px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 48px -30px rgba(0,0,0,0.75);
+}
+
+.add-item:hover,
+.add-item:focus,
+.delete:hover,
+.delete:focus {
+    transition: all 0.5s;
+    border:none;
+    outline: 0 none;
+    transform: scale(1.05);
+}
+
+
+.delete {
+    transition: all 0.5s;
+    width: 8em;
+    margin: 1em 2em;
+    padding: 0.5em 1em;
+    cursor:pointer;
+    border:none;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: rgb(224, 73, 73);
+    -webkit-box-shadow: 10px 10px 48px -30px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 48px -30px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 48px -30px rgba(0,0,0,0.75);
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.footer {
+    bottom:0;
+    position:absolute;
+    text-align: center;
+    color:#fff;
+    background: #000;
+    padding: 2em 2em 3em;
+}
+
+.footer {
+    margin: 1em auto 0;
+    width: 100%;
+}
+
+.footer .footer-media {
+    padding-top: 1em;
+}
+
+.footer .footer-media a {
+    color:#fff;
+    text-decoration: none;
+    margin:0.5em;
+}
